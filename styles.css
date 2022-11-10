@@ -9,6 +9,7 @@
 body{
     margin: 0;
     background-color: var(--milk);
+    overflow-x: hidden;
 }
 
 .header{
@@ -63,6 +64,11 @@ body{
     padding-top: 56px;
     padding-bottom: 18px;
     padding-left: 139px;
+    overflow-x: scroll;
+}
+
+.filters > * {
+    min-width: 70px;
 }
 
 .filters h2{
@@ -103,9 +109,9 @@ body{
 
 .list-coffee-shop{
     padding: 47px 252px;
-    display: grid;
-    grid-template-columns: 337px 337px 337px;
-    grid-gap: 106px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row
 }
 
 .list-coffee-shop .coffee-card{
@@ -114,26 +120,28 @@ body{
     height: 436px;
     border-radius: 15px;
     background-size: cover;
-    position: relative;
     font-family: Petrona;
     font-size: 15px;
     font-weight: bold;
     line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 36px;
+    margin-bottom: 36px;
+    /* margin-right: 106px;
+    margin-bottom: 60px; */
 }
 
 .list-coffee-shop .coffee-card .rating{
     background-color: var(--milk);
     border-radius: 15px;
     color: var(--black);
-    padding: 8px;
+    padding: 8px 16px;
     width: 49.33px;
     display: flex;
     justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    top: 10px;
-    left: 10px;
 }
 
 
@@ -151,20 +159,20 @@ body{
 }
 
 .list-coffee-shop .coffee-card .info{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .list-coffee-shop .coffee-card .info .distance{
     background-color: var(--milk);
     border-radius: 15px;
     color: var(--black);
-    left: 43px;
+    left: 18px;
     position: relative;
     top: 10px;
-    padding: 4px 16px 8px 16px;
-    width: 67.27px;
+    padding: 4px 15px 8px 15px;
+    width: 68.27px;
 }
 
 .list-coffee-shop .coffee-card .info .distance img{
@@ -177,34 +185,27 @@ body{
     background-color: var(--milk);
     border-radius: 15px;
     color: var(--black);
-    position: relative;
     padding: 16px;
-    width: 245.62px;
-    height: 65.98px;
-    left: 25px;
 }
 .list-coffee-shop .coffee-card .info .title h2{
+    display: inline-block;
     font-family: 'Playfair Display SC';
     font-size: 20px;
     font-weight: bold;
     line-height: 27px;
     letter-spacing: 0px;
-    display: inline-block;
-    margin: 0;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
 }
 
 .list-coffee-shop .coffee-card .info .title .features{
-    display: inline-block;
+    display: block;
     float: right;
 }
 
 .list-coffee-shop .coffee-card .info .title .features img{
     width: 19.46px;
     height: 19.46px;
-}
-
-.list-coffee-shop .coffee-card .info .title .schedule{
-    margin-top: 12px;
 }
 
 .list-coffee-shop .coffee-card .info .title .schedule .close{
