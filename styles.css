@@ -22,7 +22,8 @@ body{
 }
 
 .header .logo{
-    width: 144px;
+    width: 76px;
+    margin: 0 auto;
 }
 
 .header a{
@@ -75,6 +76,7 @@ body{
 }
 
 .filters h2{
+ display: none;
  margin-right: 48px;
  font-family: 'Volkhov';
  font-weight: bold;
@@ -254,6 +256,19 @@ body{
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     
+}
+
+@media (min-width: 768px){
+    .header .logo{
+        width: 144px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .filters h2{
+        display: block;
+    }
 }
 
  /* X-Large devices (large desktops, 1200px and up) */
