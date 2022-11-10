@@ -218,9 +218,22 @@ body{
 }
 
 
+@media (max-width: 575.98px) {
+    .header{
+        padding: 30px;
+    }
+
+    .filters{
+        padding: 56px 0 18px 40px;
+    }
+    
+    .list-coffee-shop{
+        padding: 37px 52px
+    }
+}
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
     .list-coffee-shop .coffee-card{
         min-width: 258px;
         width: 337px;
@@ -260,7 +273,7 @@ body{
     
 }
 
-@media (max-width: 1399.98px) {
+@media (min-width: 576px) and (max-width: 1399.98px) {
     .header{
         padding: 30px 70px;
     }
