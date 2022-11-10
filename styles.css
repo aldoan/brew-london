@@ -4,9 +4,7 @@
     --milk: #FFFAF5;
     --black: #2F2D2C;
     --gray: #807069;
-
 }
-
 
 body{
     margin: 0;
@@ -67,6 +65,7 @@ body{
 }
 
 .filters{
+    align-items: baseline;
     display: flex;
     border-bottom: 2px solid var(--black);
     padding: 56px 0 18px 139px;
@@ -80,6 +79,8 @@ body{
 .filters h2{
  display: none;
  margin-right: 48px;
+ margin-top: 0;
+ margin-bottom: 0;
  font-family: 'Volkhov';
  font-weight: bold;
  font-size: 24px;
@@ -95,14 +96,14 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    height: 40px;
-    line-height: 21px;
+    height: 27px;
+    line-height: 25px;
     margin-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     text-transform: uppercase;
-    width: 120px;
-
+    width: 151px;
+    padding-bottom: 10px;
 }
 
 .filters span:hover{
@@ -114,8 +115,16 @@ body{
     color: var(--milk);
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+    padding-top: 47px;
+    max-width: 1180px;
+}
+
 .list-coffee-shop{
-    padding: 47px 252px;
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
@@ -270,19 +279,32 @@ body{
     .filters{
         padding: 56px 0 18px 40px;
     }
-    
-    .list-coffee-shop{
-        padding: 37px 52px
-    }
-}
 
- /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {
     .list-coffee-shop .coffee-card{
         min-width: 258px;
         width: 337px;
         height: 436px;
     }
+
+    .container{
+        max-width: 394px;
+    }
+    
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .list-coffee-shop .coffee-card{
+        width: 219px;
+        height: 283.34px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    .container{
+        max-width: 510px;
+    }
+
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -293,11 +315,17 @@ body{
         margin-right: 15px;
         margin-bottom: 20px;
     }
+
+    .container{
+        max-width: 764px;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .container{
+        max-width: 786px;
+    }
 }
 
 @media (min-width: 768px){
@@ -339,9 +367,6 @@ body{
         padding: 56px 0 18px 70px;
     }
     
-    .list-coffee-shop{
-        padding: 37px 112px
-    }
 }
 
 
@@ -351,14 +376,8 @@ body{
         margin-right: 53px;
         margin-bottom: 36px;
     }
- }
 
-@media (min-width: 1700px) {
-    .list-coffee-shop .coffee-card{
-        margin-right: 53px;
-        margin-bottom: 36px;
-    }
     .list-coffee-shop .coffee-card:nth-child(3n){
         margin-right: 0;
     }
-}
+ }
