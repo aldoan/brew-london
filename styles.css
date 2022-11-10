@@ -284,10 +284,11 @@ body{
         min-width: 258px;
         width: 337px;
         height: 436px;
+        margin-right: 0;
     }
 
     .container{
-        max-width: 394px;
+        max-width: 337px;
     }
     
 }
