@@ -1,79 +1,3 @@
-:root {
-    --brown: #C05541;
-    --white: #ffffff;
-    --milk: #FFFAF5;
-    --black: #2F2D2C;
-    --gray: #807069;
-}
-
-body{
-    margin: 0;
-    background-color: var(--milk);
-    overflow-x: hidden;
-}
-
-.header{
-    height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 47px 139px;
-    background-color: var(--brown);
-}
-
-.header .logo img{
-    width: 76px;
-}
-
-.header .logo {
-    display: block;
-    margin: 0 auto;
-    width: 76px;
-}
-
-.header a{
-    color: var(--white);
-}
-
-.header .burguer-menu{
-    display: none;
-    cursor: pointer;
-}
-
-.header .navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items:baseline;
-}
-
-.header .navbar li{
-    list-style: none;
-    margin-left: 91px;
-    cursor: pointer;
-}
-
-.header .navbar li:last-child{
-    border: 1px solid var(--white);
-    border-radius: 10px;
-    padding: 10px 30px;
-}
-
-.header .navbar li:last-child:hover{
-
-}
-
-
-.header .navbar li a{
-    font-family: 'Volkhov';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 .filters{
     align-items: baseline;
     display: flex;
@@ -125,7 +49,7 @@ body{
     color: var(--milk);
 }
 
-.container{
+.container.list-coffee-shop{
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5px;
@@ -240,52 +164,8 @@ body{
     color:var(--black)
 }
 
-.mobile-menu{
-    background-color: var(--milk);
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.mobile-menu .leaves-corner{
-    position:absolute;
-    top: 0;
-    left: 0;
-}
-
-.mobile-menu .closing-button{
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
-
-.mobile-menu .navbar li {
-    list-style-type: none;
-    margin-bottom: 52px;
-}
-
-.mobile-menu .navbar li a{
-    font-family: Playfair Display SC;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 43px;
-    
-    text-transform: uppercase;
-    color: var(--gray);
-    text-decoration: none;
-}
-
-
 @media (max-width: 575.98px) {
-    .header{
-        padding: 30px;
-    }
-
+    
     .filters{
         padding: 56px 0 18px 40px;
     }
@@ -297,13 +177,12 @@ body{
         margin-right: 0;
     }
 
-    .container{
+    .container.list-coffee-shop{
         max-width: 337px;
     }
+}   
     
-}
-
- /* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     
     .list-coffee-shop .coffee-card{
@@ -312,14 +191,14 @@ body{
         margin-right: 15px;
         margin-bottom: 20px;
     }
-    .container{
+    .container.list-coffee-shop{
         max-width: 510px;
     }
 
 }
 
  /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+ @media (min-width: 768px) and (max-width: 991.98px) {
     .list-coffee-shop .coffee-card{
         width: 219px;
         height: 283.34px;
@@ -327,25 +206,15 @@ body{
         margin-bottom: 20px;
     }
 
-    .container{
+    .container.list-coffee-shop{
         max-width: 764px;
     }
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .container{
+    .container.list-coffee-shop{
         max-width: 786px;
-    }
-}
-
-@media (min-width: 768px){
-    .header .logo img{
-        width: 144px;
-    }
-    .header .logo{
-        margin: 0;
-        width: 144px;
     }
 }
 
@@ -355,32 +224,10 @@ body{
     }
 }
 
- /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    
-}
-
-@media (max-width: 991.98px){
-
-    .header .burguer-menu{
-        display: block;
-    }
-
-    .header .navbar{
-        display: none;
-    }
-    
-}
-
 @media (min-width: 576px) and (max-width: 1399.98px) {
-    .header{
-        padding: 30px 70px;
-    }
-
     .filters{
         padding: 56px 0 18px 70px;
     }
-    
 }
 
 
