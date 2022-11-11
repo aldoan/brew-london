@@ -69,6 +69,7 @@
 
 .container.about .icons-sun-about > * {
     margin: 25px;
+    width: 45px;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
