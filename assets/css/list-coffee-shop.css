@@ -82,6 +82,11 @@
     margin-bottom: 36px;
 }
 
+.list-coffee-shop .coffee-card:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 
 .list-coffee-shop .coffee-card .rating{
     background-color: var(--milk);
