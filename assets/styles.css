@@ -21,9 +21,14 @@ body{
     background-color: var(--brown);
 }
 
-.header .logo{
+.header .logo img{
     width: 76px;
+}
+
+.header .logo {
+    display: block;
     margin: 0 auto;
+    width: 76px;
 }
 
 .header a{
@@ -44,12 +49,17 @@ body{
 .header .navbar li{
     list-style: none;
     margin-left: 91px;
+    cursor: pointer;
 }
 
 .header .navbar li:last-child{
     border: 1px solid var(--white);
     border-radius: 10px;
     padding: 10px 30px;
+}
+
+.header .navbar li:last-child:hover{
+
 }
 
 
@@ -330,9 +340,12 @@ body{
 }
 
 @media (min-width: 768px){
-    .header .logo{
+    .header .logo img{
         width: 144px;
+    }
+    .header .logo{
         margin: 0;
+        width: 144px;
     }
 }
 
