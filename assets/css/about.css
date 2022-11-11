@@ -115,6 +115,7 @@
         box-sizing: border-box;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 34px;
     }
 
     .container.about .about-info h1{
